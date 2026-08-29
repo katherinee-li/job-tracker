@@ -1,0 +1,262 @@
+{
+  "OpenAI": {
+    "board": "ashby",
+    "slug": "openai",
+    "jobs": 758
+  },
+  "Anthropic": {
+    "board": "greenhouse",
+    "slug": "anthropic",
+    "jobs": 571
+  },
+  "Cognition": {
+    "board": "ashby",
+    "slug": "cognition",
+    "jobs": 89
+  },
+  "Fireworks AI": {
+    "board": "ashby",
+    "slug": "fireworks",
+    "jobs": 67
+  },
+  "Datadog": {
+    "board": "greenhouse",
+    "slug": "datadog",
+    "jobs": 454
+  },
+  "Databricks": {
+    "board": "greenhouse",
+    "slug": "databricks",
+    "jobs": 858
+  },
+  "Scale AI": {
+    "board": "greenhouse",
+    "slug": "scaleai",
+    "jobs": 219
+  },
+  "Palantir": {
+    "board": "lever",
+    "slug": "palantir",
+    "jobs": 307
+  },
+  "Physical Intelligence": {
+    "board": "ashby",
+    "slug": "physicalintelligence",
+    "jobs": 33
+  },
+  "Figure": {
+    "board": "greenhouse",
+    "slug": "figure",
+    "jobs": 15
+  },
+  "Waymo": {
+    "board": "greenhouse",
+    "slug": "waymo",
+    "jobs": 352
+  },
+  "Stripe": {
+    "board": "greenhouse",
+    "slug": "stripe",
+    "jobs": 575
+  },
+  "Together AI": {
+    "board": "greenhouse",
+    "slug": "togetherai",
+    "jobs": 62
+  },
+  "Baseten": {
+    "board": "ashby",
+    "slug": "baseten",
+    "jobs": 81
+  },
+  "Modal": {
+    "board": "ashby",
+    "slug": "modal",
+    "jobs": 31
+  },
+  "Anyscale": {
+    "board": "ashby",
+    "slug": "anyscale",
+    "jobs": 20
+  },
+  "CoreWeave": {
+    "board": "greenhouse",
+    "slug": "coreweave",
+    "jobs": 271
+  },
+  "Cerebras": {
+    "board": "ashby",
+    "slug": "cerebras",
+    "jobs": 109
+  },
+  "Lambda": {
+    "board": "ashby",
+    "slug": "lambda",
+    "jobs": 76
+  },
+  "LangChain": {
+    "board": "ashby",
+    "slug": "langchain",
+    "jobs": 107
+  },
+  "LlamaIndex": {
+    "board": "ashby",
+    "slug": "llamaindex",
+    "jobs": 15
+  },
+  "Pinecone": {
+    "board": "ashby",
+    "slug": "pinecone",
+    "jobs": 7
+  },
+  "Vercel": {
+    "board": "greenhouse",
+    "slug": "vercel",
+    "jobs": 91
+  },
+  "Cloudflare": {
+    "board": "greenhouse",
+    "slug": "cloudflare",
+    "jobs": 309
+  },
+  "Exa": {
+    "board": "ashby",
+    "slug": "exa",
+    "jobs": 54
+  },
+  "Perplexity": {
+    "board": "ashby",
+    "slug": "perplexity",
+    "jobs": 97
+  },
+  "Sierra": {
+    "board": "ashby",
+    "slug": "sierra",
+    "jobs": 199
+  },
+  "Harvey": {
+    "board": "ashby",
+    "slug": "harvey",
+    "jobs": 350
+  },
+  "Decagon": {
+    "board": "ashby",
+    "slug": "decagon",
+    "jobs": 137
+  },
+  "Writer": {
+    "board": "ashby",
+    "slug": "writer",
+    "jobs": 51
+  },
+  "Abridge": {
+    "board": "ashby",
+    "slug": "abridge",
+    "jobs": 42
+  },
+  "Mercor": {
+    "board": "ashby",
+    "slug": "mercor",
+    "jobs": 92
+  },
+  "Anysphere": {
+    "board": "ashby",
+    "slug": "cursor",
+    "jobs": 121
+  },
+  "Replit": {
+    "board": "ashby",
+    "slug": "replit",
+    "jobs": 71
+  },
+  "ElevenLabs": {
+    "board": "ashby",
+    "slug": "elevenlabs",
+    "jobs": 248
+  },
+  "FieldAI": {
+    "board": "lever",
+    "slug": "field-ai",
+    "jobs": 120
+  },
+  "Generalist": {
+    "board": "ashby",
+    "slug": "generalist",
+    "jobs": 16
+  },
+  "Apptronik": {
+    "board": "greenhouse",
+    "slug": "apptronik",
+    "jobs": 81
+  },
+  "1X": {
+    "board": "ashby",
+    "slug": "1x",
+    "jobs": 81
+  },
+  "Sunday Robotics": {
+    "board": "ashby",
+    "slug": "sunday",
+    "jobs": 26
+  },
+  "Dexterity": {
+    "board": "lever",
+    "slug": "dexterity",
+    "jobs": 33
+  },
+  "Gecko Robotics": {
+    "board": "ashby",
+    "slug": "gecko-robotics",
+    "jobs": 19
+  },
+  "Nuro": {
+    "board": "greenhouse",
+    "slug": "nuro",
+    "jobs": 101
+  },
+  "Skydio": {
+    "board": "ashby",
+    "slug": "skydio",
+    "jobs": 125
+  },
+  "Waabi": {
+    "board": "lever",
+    "slug": "waabi",
+    "jobs": 82
+  },
+  "GrayMatter Robotics": {
+    "board": "ashby",
+    "slug": "graymatter-robotics",
+    "jobs": 15
+  },
+  "Snowflake": {
+    "board": "ashby",
+    "slug": "snowflake",
+    "jobs": 389
+  },
+  "Anduril": {
+    "board": "greenhouse",
+    "slug": "andurilindustries",
+    "jobs": 2176
+  },
+  "Glean": {
+    "board": "greenhouse",
+    "slug": "gleanwork",
+    "jobs": 110
+  },
+  "Hebbia": {
+    "board": "ashby",
+    "slug": "hebbia-ai",
+    "jobs": 23
+  },
+  "Zipline": {
+    "board": "greenhouse",
+    "slug": "flyzipline",
+    "jobs": 327
+  },
+  "Applied Intuition": {
+    "board": "ashby",
+    "slug": "applied",
+    "jobs": 300
+  }
+}

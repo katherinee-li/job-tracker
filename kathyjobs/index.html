@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="cache-control" content="no-cache" />
+<title>Job Tracker</title>
+<style>
+  :root { --bg:#f7f8fa; --card:#ffffff; --line:#dfe3e8; --fg:#1a1d21; --mut:#5f6672; --acc:#1a73e8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  header { padding:20px 24px 8px; }
+  h1 { margin:0 0 4px; font-size:20px; }
+  .sub { color:var(--mut); font-size:13px; }
+  .bar { display:flex; gap:8px; flex-wrap:wrap; padding:12px 24px; align-items:center; }
+  button, select, input { background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:8px; padding:7px 11px; font-size:13px; cursor:pointer; }
+  button:hover { border-color:var(--acc); }
+  button.primary { background:var(--acc); border-color:var(--acc); color:#fff; }
+  .list { padding:0 24px 48px; display:grid; gap:10px; }
+  .job { background:var(--card); border:1px solid var(--line); box-shadow:0 1px 2px rgba(0,0,0,.04); border-radius:10px; padding:12px 14px; display:flex; gap:12px; align-items:flex-start; }
+  .job h3 { margin:0 0 3px; font-size:15px; }
+  .job .meta { color:var(--mut); font-size:13px; }
+  .tags { display:flex; gap:6px; margin-top:6px; flex-wrap:wrap; }
+  .tag { font-size:11px; padding:2px 7px; border-radius:99px; border:1px solid var(--line); color:var(--mut); }
+  .tag.target { color:#137333; border-color:#a8d5b8; background:#e9f6ee; }
+  .tag.intern { color:#8a5a00; border-color:#e5cf9a; background:#fdf5e2; }
+  .actions { margin-left:auto; display:flex; gap:6px; flex-shrink:0; flex-wrap:wrap; justify-content:flex-end; }
+  .empty { color:var(--mut); padding:24px; }
+  .tabs { display:flex; gap:4px; padding:8px 24px 0; border-bottom:1px solid var(--line); }
+  .tabs button { background:transparent; border:none; border-bottom:2px solid transparent; border-radius:0; padding:8px 14px; font-size:14px; color:var(--mut); }
+  .tabs button.on { color:var(--fg); border-bottom-color:var(--acc); font-weight:600; }
+  a { color:var(--acc); text-decoration:none; }
+  .panel { display:none; padding:0 24px 12px; }
+  .panel.on { display:block; }
+  .panel .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:6px; }
+  .co { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:6px 10px; display:flex; align-items:center; gap:8px; font-size:13px; }
+  .co.hidden { opacity:.5; }
+  .co .n { color:var(--mut); font-size:12px; }
+  .co .sp { flex:1; }
+  .co button { padding:3px 8px; font-size:12px; }
+  .co button.on { border-color:var(--acc); color:var(--acc); }
+  .toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#ffffff; box-shadow:0 2px 10px rgba(0,0,0,.12); border:1px solid var(--line); padding:10px 16px; border-radius:8px; opacity:0; transition:.2s; }
+  .toast.show { opacity:1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Job Tracker</h1>
+  <div class="sub">Watchlist companies only: forward-deployed engineering, APM / early-career PM and product internships (US, &le;3 yrs experience), plus a Software tab for SWE internships and co-ops. Checked daily on company career boards. Updated <span id="updated">—</span>. "Add to sheet" copies a row in your Recruitment sheet's format.</div>
+</header>
+
+<div class="tabs">
+  <button data-track="product" class="on">Product / FDE</button>
+  <button data-track="software">Software</button>
+</div>
+
+<div class="bar">
+  <input id="q" placeholder="Search title or company" style="min-width:220px" />
+  <select id="role"><option value="">All roles</option><option value="fde">FDE</option><option value="apm">APM / PM</option><option value="product-intern">Product intern</option><option value="swe-intern">SWE intern</option></select>
+  <select id="kind"><option value="">All types</option><option value="full-time">Full-time</option><option value="intern">Internship</option><option value="co-op">Co-op</option></select>
+  <select id="tier"><option value="">All companies</option><option value="star">Starred only</option><option value="tier1">Tier 1</option><option value="big-tech">Big tech</option><option value="robotics">Robotics</option><option value="agents">AI agents</option><option value="ai-infra">AI infra</option></select>
+  <select id="age"><option value="30">Posted &lt; 30 days</option><option value="7">Posted &lt; 7 days</option><option value="">Any date</option></select>
+  <select id="view"><option value="active">Active</option><option value="unapplied">Not applied yet</option><option value="archived">Archived</option><option value="applied">Applied</option><option value="all">Everything</option></select>
+  <span style="flex:1"></span>
+  <button id="companies">Companies</button>
+  <button id="copyAll">Copy all as sheet rows</button>
+  <button id="openSheet" class="primary">Open Google Sheet</button>
+  <button id="reset">Reset hidden</button>
+</div>
+
+<div class="panel" id="coPanel">
+  <div class="sub" style="padding:4px 0 8px">Star a company to pin its roles to the top; hide one to drop it from every list.</div>
+  <div class="grid" id="coGrid"></div>
+</div>
+
+<div class="list" id="list"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1Z29duCNNv1h2uoqZdajH4eHHemmeBNf4w3aCQxJjN3g/edit?gid=0#gid=0";
+const KEY = "jobtracker.state.v1";
+const CO_KEY = "jobtracker.companies.v1";
+let jobs = [], track = "product", state = JSON.parse(localStorage.getItem(KEY) || "{}");
+let cos = JSON.parse(localStorage.getItem(CO_KEY) || "{}");
+
+const coKey = name => (name || "").trim().toLowerCase();
+const coPref = name => cos[coKey(name)] || "";
+function setCo(name, pref) {
+  const k = coKey(name);
+  if (pref) cos[k] = pref; else delete cos[k];
+  localStorage.setItem(CO_KEY, JSON.stringify(cos));
+  renderCompanies(); render();
+}
+
+const save = () => localStorage.setItem(KEY, JSON.stringify(state));
+const st = id => state[id] || {};
+const setSt = (id, patch) => { state[id] = Object.assign({}, st(id), patch); save(); render(); };
+
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1800);
+}
+
+// Matches the "Recruitment" sheet: Company | Position | Season | Application Date | Referral? | Status | Notes | Rank
+function position(j) {
+  const t = j.title.toLowerCase();
+  if ((j.track || "product") === "software") return j.kind === "full-time" ? "swe ft" : "swe " + j.kind;
+  const suffix = j.kind === "intern" ? " intern" : j.kind === "co-op" ? " co-op" : null;
+  if (/forward deployed/.test(t)) return suffix ? "fde" + suffix : "fde ft";
+  if (/solutions (engineer|architect)/.test(t)) return suffix ? "solutions" + suffix : "solutions engineer";
+  if (/\bapm\b|associate product manager/.test(t)) return suffix ? "apm" + suffix : "apm";
+  return suffix ? "pm" + suffix : "pm ft";
+}
+function season(j) {
+  const yr = (j.title.match(/20(2[6-9])/) || [])[0];
+  if (j.kind === "intern" || j.kind === "co-op") {
+    if (/fall/i.test(j.title)) return "Fall " + (yr || "2026");
+    if (/spring/i.test(j.title)) return "Spring " + (yr || "2027");
+    return "Summer " + (yr || "2027");
+  }
+  return "Full Time " + (yr || "2027");
+}
+function sheetRow(j) {
+  const d = new Date();
+  const date = (d.getMonth() + 1) + "/" + d.getDate() + "/" + d.getFullYear();
+  return [j.company.toLowerCase(), position(j), season(j), date, "", "Applied", j.url, ""].join("\t");
+}
+
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove(); return true; }
+}
+
+function visible() {
+  const q = document.getElementById("q").value.toLowerCase();
+  const kind = document.getElementById("kind").value;
+  const tier = document.getElementById("tier").value;
+  const view = document.getElementById("view").value;
+  const role = document.getElementById("role").value;
+  const maxAge = document.getElementById("age").value;
+  return jobs.filter(j => {
+    const s = st(j.id);
+    if ((j.track || "product") !== track) return false;
+    if (s.deleted) return false;
+    if (view === "active" && s.archived) return false;
+    if (view === "unapplied" && (s.archived || s.applied)) return false;
+    if (view === "archived" && !s.archived) return false;
+    if (view === "applied" && !s.applied) return false;
+    if (kind && j.kind !== kind) return false;
+    const pref = coPref(j.company);
+    if (pref === "hide") return false;
+    if (tier === "star" && pref !== "star") return false;
+    if (tier && tier !== "star" && j.tier !== tier) return false;
+    if (role && j.role !== role) return false;
+    if (maxAge && j.age !== null && j.age !== undefined && j.age > +maxAge) return false;
+    if (q && !(j.title + " " + j.company).toLowerCase().includes(q)) return false;
+    return true;
+  }).sort((a, b) => (coPref(b.company) === "star") - (coPref(a.company) === "star"));
+}
+
+function renderCompanies() {
+  const grid = document.getElementById("coGrid");
+  const counts = {};
+  for (const j of jobs) {
+    if ((j.track || "product") !== track) continue;
+    const k = coKey(j.company);
+    if (!counts[k]) counts[k] = { name: j.company, n: 0 };
+    counts[k].n++;
+  }
+  const rows = Object.values(counts).sort((a, b) => b.n - a.n);
+  grid.innerHTML = "";
+  for (const c of rows) {
+    const pref = coPref(c.name);
+    const el = document.createElement("div");
+    el.className = "co" + (pref === "hide" ? " hidden" : "");
+    el.innerHTML = `<span>${c.name}</span><span class="n">${c.n}</span><span class="sp"></span>
+      <button data-p="star" class="${pref === "star" ? "on" : ""}">★</button>
+      <button data-p="hide" class="${pref === "hide" ? "on" : ""}">hide</button>`;
+    el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+      setCo(c.name, pref === b.dataset.p ? "" : b.dataset.p);
+    }));
+    grid.appendChild(el);
+  }
+}
+
+function render() {
+  const list = document.getElementById("list");
+  const items = visible();
+  if (!items.length) { list.innerHTML = '<div class="empty">Nothing here.</div>'; return; }
+  list.innerHTML = "";
+  for (const j of items) {
+    const s = st(j.id);
+    const el = document.createElement("div");
+    el.className = "job";
+    el.innerHTML = `
+      <div>
+        <h3><a href="${j.url}" target="_blank" rel="noopener">${j.title}</a></h3>
+        <div class="meta">${j.company} · ${j.location || "—"}${j.posted ? " · " + j.posted : ""}</div>
+        <div class="tags">
+          <span class="tag target">${j.role}</span>
+          <span class="tag ${j.kind === "full-time" ? "" : "intern"}">${j.kind}</span>
+          <span class="tag">${j.tier}</span>
+          ${s.applied ? '<span class="tag">applied</span>' : ""}
+          ${s.archived ? '<span class="tag">archived</span>' : ""}
+        </div>
+      </div>
+      <div class="actions">
+        <button data-a="open">Open</button>
+        <button data-a="sheet">Add to sheet</button>
+        <button data-a="apply">${s.applied ? "Applied ✓ — undo" : "Mark applied"}</button>
+        <button data-a="star">${coPref(j.company) === "star" ? "★ starred" : "☆ star company"}</button>
+        <button data-a="hideco">Hide company</button>
+        <button data-a="archive">${s.archived ? "Unarchive" : "Archive"}</button>
+        <button data-a="delete">Delete</button>
+      </div>`;
+    el.querySelectorAll("button").forEach(b => b.addEventListener("click", async () => {
+      const a = b.dataset.a;
+      if (a === "open") window.open(j.url, "_blank", "noopener");
+      if (a === "apply") setSt(j.id, { applied: !s.applied });
+      if (a === "sheet") { await copyText(sheetRow(j)); window.open(SHEET_URL, "_blank", "noopener"); toast("Row copied — paste into the next empty row"); }
+      if (a === "star") setCo(j.company, coPref(j.company) === "star" ? "" : "star");
+      if (a === "hideco") { setCo(j.company, "hide"); toast(j.company + " hidden — undo in Companies"); }
+      if (a === "archive") setSt(j.id, { archived: !s.archived });
+      if (a === "delete") setSt(j.id, { deleted: true });
+    }));
+    list.appendChild(el);
+  }
+}
+
+document.getElementById("copyAll").addEventListener("click", async () => {
+  await copyText(visible().map(sheetRow).join("\n"));
+  toast(visible().length + " rows copied");
+});
+document.getElementById("openSheet").addEventListener("click", () => window.open(SHEET_URL, "_blank", "noopener"));
+document.getElementById("reset").addEventListener("click", () => { state = {}; save(); render(); toast("Cleared deleted/archived state"); });
+document.getElementById("companies").addEventListener("click", () => {
+  document.getElementById("coPanel").classList.toggle("on");
+  renderCompanies();
+});
+["q", "kind", "tier", "role", "age", "view"].forEach(id => document.getElementById(id).addEventListener("input", render));
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+  track = b.dataset.track;
+  document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b));
+  renderCompanies(); render();
+}));
+
+fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
+  jobs = d.jobs; document.getElementById("updated").textContent = d.updated;
+  renderCompanies(); render();
+});
+</script>
+</body>
+</html>
