@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 19:16 UTC",
+  "updated": "2026-08-29 19:30 UTC",
   "jobs": [
     {
       "id": "007a985fe34c",
@@ -782,6 +782,21 @@
       "posted": "1 day ago"
     },
     {
+      "id": "f65f990170fe",
+      "title": "Software Engineer, AI Platform - Intern",
+      "company": "Nuro",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7351061",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 3,
+      "posted": "3 days ago"
+    },
+    {
       "id": "aa37b96da0a7",
       "title": "Embedded Software Engineer Intern - Firmware Platforms (Spring 2027)",
       "company": "Tesla",
@@ -793,8 +808,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "eb967b17477d",
@@ -808,8 +823,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "3c400f6df68a",
@@ -823,8 +838,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "a09a78aeaeaf",
@@ -836,21 +851,6 @@
       "role": "swe-intern",
       "track": "software",
       "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
-    },
-    {
-      "id": "f65f990170fe",
-      "title": "Software Engineer, AI Platform - Intern",
-      "company": "Nuro",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7351061",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "company",
       "tier": "robotics",
       "minExp": null,
       "age": 3,
