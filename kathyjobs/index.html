@@ -186,6 +186,10 @@ function renderCompanies() {
   }
 }
 
+function hostOf(link) {
+  try { return new URL(link).hostname; } catch { return link; }
+}
+
 function renderSignals() {
   const list = document.getElementById("list");
   if (!signals.length) { list.innerHTML = '<div class="empty">No hiring mentions in the watched newsletters yet.</div>'; return; }
@@ -198,7 +202,7 @@ function renderSignals() {
         <h3><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></h3>
         <div class="meta">${s.company}${s.posted ? " · " + s.posted : ""}</div>
         <div class="sub" style="padding:6px 0 0">${s.snippet || ""}</div>
-        <div class="tags">${(s.links || []).map(l => `<a class="tag" href="${l}" target="_blank" rel="noopener">${new URL(l).hostname}</a>`).join("")}</div>
+        <div class="tags">${(s.links || []).map(l => `<a class="tag" href="${l}" target="_blank" rel="noopener">${hostOf(l)}</a>`).join("")}</div>
       </div>
       <div class="actions"><button data-a="open">Open</button></div>`;
     el.querySelector("button").addEventListener("click", () => window.open(s.url, "_blank", "noopener"));
