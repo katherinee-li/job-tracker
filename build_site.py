@@ -12,11 +12,17 @@ from roles import classify, kind_of
 ROOT = Path(__file__).parent
 GITHUB_RAW = ROOT / "data" / "github_raw.json"
 COMPANIES_RAW = ROOT / "data" / "companies_raw.json"
+VC_RAW = ROOT / "data" / "vc_raw.json"
+FEEDS_RAW = ROOT / "data" / "feeds_raw.json"
+X_RAW = ROOT / "data" / "x_raw.json"
 OUT = ROOT / "site" / "jobs.json"
 
 
 ROLE_ORDER = {"fde": 0, "apm": 1, "product-intern": 2, "fde-intern": 2, "swe-intern": 3}
-TIER_ORDER = {"tier1": 0, "big-tech": 1, "robotics": 2, "agents": 3, "ai-infra": 4, "other": 5}
+TIER_ORDER = {
+    "tier1": 0, "big-tech": 1, "robotics": 2, "agents": 3, "ai-infra": 4, "other": 5,
+    "discover": 6,
+}
 MAX_AGE_DAYS = 45
 
 
@@ -89,15 +95,43 @@ def age_days(j):
     return None
 
 
+def load(path):
+    return json.loads(path.read_text()) if path.exists() else []
+
+
+def signals():
+    """Newsletter/blog/X hiring mentions — context, not postings."""
+    out = []
+    for s in load(FEEDS_RAW) + load(X_RAW):
+        out.append(
+            {
+                "id": hashlib.sha1(s["url"].encode()).hexdigest()[:12],
+                "title": s["title"],
+                "company": s["company"],
+                "url": s["url"],
+                "snippet": s.get("snippet", ""),
+                "links": s.get("links", []),
+                "source": s.get("source", "feed"),
+                "posted": posted_str(s.get("posted_ts")),
+                "posted_ts": s.get("posted_ts") or 0,
+            }
+        )
+    out.sort(key=lambda s: -s["posted_ts"])
+    return out
+
+
 def main():
-    raw = json.loads(COMPANIES_RAW.read_text())
-    if GITHUB_RAW.exists():
-        raw += json.loads(GITHUB_RAW.read_text())
+    raw = load(COMPANIES_RAW) + load(GITHUB_RAW)
+    # VC portfolio boards are discovery: companies off the watchlist are allowed.
+    discovery = load(VC_RAW)
+    for j in discovery:
+        j["discover"] = True
     jobs = []
     seen = set()
-    for j in raw:
-        company = canonical((j.get("company") or "").split("\n")[0])
-        if not company:
+    for j in raw + discovery:
+        listed = canonical((j.get("company") or "").split("\n")[0])
+        company = listed or (j.get("company") or "").split("\n")[0].strip()
+        if not company or (not listed and not j.get("discover")):
             continue
         role = classify(j["title"])
         if not role:
@@ -126,7 +160,7 @@ def main():
                 "role": role[0],
                 "track": role[1],
                 "source": j.get("source", "company"),
-                "tier": tier_of(company),
+                "tier": tier_of(company) if listed else "discover",
                 "minExp": min_exp,
                 "age": age,
                 "posted": posted_of(j.get("footer")) or posted_str(j.get("posted_ts")),
@@ -139,8 +173,19 @@ def main():
         x["company"].lower(),
     ))
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps({"updated": time.strftime("%Y-%m-%d %H:%M UTC"), "jobs": jobs}, indent=2))
-    print(f"{len(jobs)} jobs -> {OUT}")
+    sig = signals()
+    OUT.write_text(
+        json.dumps(
+            {
+                "updated": time.strftime("%Y-%m-%d %H:%M UTC"),
+                "jobs": jobs,
+                "signals": sig,
+            },
+            indent=2,
+        )
+    )
+    print(f"{len(jobs)} jobs ({sum(1 for j in jobs if j['tier'] == 'discover')} discover), "
+          f"{len(sig)} signals -> {OUT}")
 
 
 if __name__ == "__main__":

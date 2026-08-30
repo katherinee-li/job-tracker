@@ -46,19 +46,20 @@
 <body>
 <header>
   <h1>Job Tracker</h1>
-  <div class="sub">Watchlist companies only: forward-deployed engineering, APM / early-career PM and product internships (US, &le;3 yrs experience), plus a Software tab for SWE internships and co-ops. Checked daily on company career boards. Updated <span id="updated">—</span>. "Add to sheet" copies a row in your Recruitment sheet's format.</div>
+  <div class="sub">Forward-deployed engineering, APM / early-career PM and product internships (US, &le;3 yrs experience), plus a Software tab for SWE internships and co-ops. Checked daily on the watchlist companies' career boards and on VC portfolio boards (a16z, Sequoia, Lightspeed, Kleiner, General Catalyst, Accel) — off-watchlist finds are tagged <b>discover</b>. Updated <span id="updated">—</span>. "Add to sheet" copies a row in your Recruitment sheet's format.</div>
 </header>
 
 <div class="tabs">
   <button data-track="product" class="on">Product / FDE</button>
   <button data-track="software">Software</button>
+  <button data-track="signals">Signals <span id="sigN"></span></button>
 </div>
 
 <div class="bar">
   <input id="q" placeholder="Search title or company" style="min-width:220px" />
   <select id="role"><option value="">All roles</option><option value="fde">FDE</option><option value="apm">APM / PM</option><option value="product-intern">Product intern</option><option value="swe-intern">SWE intern</option></select>
   <select id="kind"><option value="">All types</option><option value="full-time">Full-time</option><option value="intern">Internship</option><option value="co-op">Co-op</option></select>
-  <select id="tier"><option value="">All companies</option><option value="star">Starred only</option><option value="tier1">Tier 1</option><option value="big-tech">Big tech</option><option value="robotics">Robotics</option><option value="agents">AI agents</option><option value="ai-infra">AI infra</option></select>
+  <select id="tier"><option value="">All companies</option><option value="star">Starred only</option><option value="tier1">Tier 1</option><option value="big-tech">Big tech</option><option value="robotics">Robotics</option><option value="agents">AI agents</option><option value="ai-infra">AI infra</option><option value="discover">Discover (off watchlist)</option></select>
   <select id="age"><option value="30">Posted &lt; 30 days</option><option value="7">Posted &lt; 7 days</option><option value="">Any date</option></select>
   <select id="view"><option value="active">Active</option><option value="unapplied">Not applied yet</option><option value="archived">Archived</option><option value="applied">Applied</option><option value="all">Everything</option></select>
   <span style="flex:1"></span>
@@ -80,7 +81,7 @@
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/1Z29duCNNv1h2uoqZdajH4eHHemmeBNf4w3aCQxJjN3g/edit?gid=0#gid=0";
 const KEY = "jobtracker.state.v1";
 const CO_KEY = "jobtracker.companies.v1";
-let jobs = [], track = "product", state = JSON.parse(localStorage.getItem(KEY) || "{}");
+let jobs = [], signals = [], track = "product", state = JSON.parse(localStorage.getItem(KEY) || "{}");
 let cos = JSON.parse(localStorage.getItem(CO_KEY) || "{}");
 
 const coKey = name => (name || "").trim().toLowerCase();
@@ -161,6 +162,7 @@ function visible() {
 
 function renderCompanies() {
   const grid = document.getElementById("coGrid");
+  if (track === "signals") { grid.innerHTML = ""; return; }
   const counts = {};
   for (const j of jobs) {
     if ((j.track || "product") !== track) continue;
@@ -184,7 +186,28 @@ function renderCompanies() {
   }
 }
 
+function renderSignals() {
+  const list = document.getElementById("list");
+  if (!signals.length) { list.innerHTML = '<div class="empty">No hiring mentions in the watched newsletters yet.</div>'; return; }
+  list.innerHTML = "";
+  for (const s of signals) {
+    const el = document.createElement("div");
+    el.className = "job";
+    el.innerHTML = `
+      <div>
+        <h3><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></h3>
+        <div class="meta">${s.company}${s.posted ? " · " + s.posted : ""}</div>
+        <div class="sub" style="padding:6px 0 0">${s.snippet || ""}</div>
+        <div class="tags">${(s.links || []).map(l => `<a class="tag" href="${l}" target="_blank" rel="noopener">${new URL(l).hostname}</a>`).join("")}</div>
+      </div>
+      <div class="actions"><button data-a="open">Open</button></div>`;
+    el.querySelector("button").addEventListener("click", () => window.open(s.url, "_blank", "noopener"));
+    list.appendChild(el);
+  }
+}
+
 function render() {
+  if (track === "signals") return renderSignals();
   const list = document.getElementById("list");
   const items = visible();
   if (!items.length) { list.innerHTML = '<div class="empty">Nothing here.</div>'; return; }
@@ -246,7 +269,9 @@ document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click
 }));
 
 fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
-  jobs = d.jobs; document.getElementById("updated").textContent = d.updated;
+  jobs = d.jobs; signals = d.signals || [];
+  document.getElementById("updated").textContent = d.updated;
+  document.getElementById("sigN").textContent = signals.length ? "(" + signals.length + ")" : "";
   renderCompanies(); render();
 });
 </script>

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 19:30 UTC",
+  "updated": "2026-08-30 06:09 UTC",
   "jobs": [
     {
       "id": "007a985fe34c",
@@ -148,8 +148,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "f761d09625d4",
@@ -163,8 +163,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "6f08f4d77480",
@@ -178,8 +178,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "62aa156b5ff1",
@@ -193,8 +193,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "971505042781",
@@ -208,8 +208,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": 2,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "762ddb31b045",
@@ -223,8 +223,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "2c46bb0f8187",
@@ -238,8 +238,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 35,
-      "posted": "35 days ago"
+      "age": 36,
+      "posted": "36 days ago"
     },
     {
       "id": "8cfdfa9fd5ee",
@@ -302,6 +302,21 @@
       "posted": "11 days ago"
     },
     {
+      "id": "d826729a8d92",
+      "title": "Forward Deployed Engineer",
+      "company": "Dexterity",
+      "location": "Redwood City",
+      "url": "https://jobs.lever.co/dexterity/5005c9a7-4014-4ccb-8d13-c109951f9097",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:kleiner-perkins",
+      "tier": "robotics",
+      "minExp": null,
+      "age": null,
+      "posted": ""
+    },
+    {
       "id": "7dd3a440b940",
       "title": "Forward Deployed Strategist",
       "company": "Anysphere",
@@ -328,8 +343,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "4690762aaf53",
@@ -343,8 +358,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "d3f26382f768",
@@ -358,8 +373,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "d7bfe627c130",
@@ -373,8 +388,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "868e90af7e4c",
@@ -418,8 +433,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "c03ef4d03593",
@@ -433,8 +448,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "c08b53a39721",
@@ -448,8 +463,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "939cf96b5122",
@@ -478,8 +493,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "47561b1bdc81",
@@ -527,6 +542,246 @@
       "posted": "26 days ago"
     },
     {
+      "id": "e75a7074a2f9",
+      "title": "Forward Deployed Engineer",
+      "company": "Bilt Rewards",
+      "location": "New York, NY, USA, New York, USA",
+      "url": "https://jobs.gem.com/bilt/am9icG9zdDrEG9XjI46ZbZSQpqZiCjKQ",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:general-catalyst",
+      "tier": "discover",
+      "minExp": null,
+      "age": 2,
+      "posted": "2 days ago"
+    },
+    {
+      "id": "faea4b3eb790",
+      "title": "Founding Forward Deployed Engineer - US",
+      "company": "H Company",
+      "location": "San Francisco, CA, USA, San Francisco County, CA, USA",
+      "url": "https://jobs.ashbyhq.com/hcompany/9d3a4bc3-da2d-4cc7-850b-c4010aa2e02b",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 2,
+      "posted": "2 days ago"
+    },
+    {
+      "id": "f279c10ade22",
+      "title": "Forward Deployed Engineer (FDE) - Data 360",
+      "company": "Airkit",
+      "location": "San Francisco, CA, USA, San Francisco County, CA, USA",
+      "url": "https://www.salesforce.com/company/careers/jobs/JR357428/forward-deployed-engineer-fde-data-360/",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 3,
+      "posted": "3 days ago"
+    },
+    {
+      "id": "2ac58e7d8520",
+      "title": "Forward Deployed Engineer (FDE) \u2014 Agentforce Orchestration",
+      "company": "Airkit",
+      "location": "San Francisco, CA, USA, San Francisco County, CA, USA",
+      "url": "https://www.salesforce.com/company/careers/jobs/JR357427/forward-deployed-engineer-fde-agentforce-orchestration/",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 3,
+      "posted": "3 days ago"
+    },
+    {
+      "id": "f7e4bf9ba5f0",
+      "title": "Forward Deployed Engineer, Video",
+      "company": "Protege",
+      "location": "United States, Remote",
+      "url": "https://jobs.ashbyhq.com/protege/5b9a6b80-3957-4fcc-9583-b8c977839343",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:andreessen-horowitz",
+      "tier": "discover",
+      "minExp": 3,
+      "age": 5,
+      "posted": "5 days ago"
+    },
+    {
+      "id": "d022755aefb1",
+      "title": "Forward Deployed Engineer, Audio",
+      "company": "Protege",
+      "location": "United States, Remote",
+      "url": "https://jobs.ashbyhq.com/protege/2d001d2f-40a0-428d-96cb-114323c38cd8",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:andreessen-horowitz",
+      "tier": "discover",
+      "minExp": 3,
+      "age": 5,
+      "posted": "5 days ago"
+    },
+    {
+      "id": "b51c766e33e1",
+      "title": "Forward Deployed Engineer - Eastern US",
+      "company": "Redpanda Data",
+      "location": "United States, New York City - Remote",
+      "url": "https://jobs.ashbyhq.com/redpanda-data/6f178d53-d54a-4e4f-a8fe-523c4c4c09a1",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:lightspeed",
+      "tier": "discover",
+      "minExp": null,
+      "age": 10,
+      "posted": "10 days ago"
+    },
+    {
+      "id": "6da23eee31ee",
+      "title": "Forward Deployed Engineer",
+      "company": "Tailscale",
+      "location": "United States, North America",
+      "url": "https://boards.greenhouse.io/tailscale/jobs/4724897005",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 11,
+      "posted": "11 days ago"
+    },
+    {
+      "id": "ac8549ac76bc",
+      "title": "Forward Deployed Engineer (New Grad)",
+      "company": "Composio",
+      "location": "San Francisco, California, USA, sf",
+      "url": "https://jobs.ashbyhq.com/composio/f83a19a0-8188-4100-9dd5-b259efb342e6",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:lightspeed",
+      "tier": "discover",
+      "minExp": null,
+      "age": 16,
+      "posted": "16 days ago"
+    },
+    {
+      "id": "e2fd6c94d9b4",
+      "title": "Forward Deployed Engineer",
+      "company": "Bunkerhill Health",
+      "location": "San Francisco, California, United States, SF Office",
+      "url": "https://jobs.ashbyhq.com/bunkerhillhealth/548ba6a6-b90f-462b-9f89-0f50de4557fe",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:sequoia-capital",
+      "tier": "discover",
+      "minExp": null,
+      "age": 19,
+      "posted": "19 days ago"
+    },
+    {
+      "id": "04c8b8511570",
+      "title": "Forward Deployed Engineer",
+      "company": "Balance",
+      "location": "New York",
+      "url": "https://www.comeet.com/jobs/balance/67.008/forward-deployed-engineer/12.F6A",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:lightspeed",
+      "tier": "discover",
+      "minExp": null,
+      "age": 24,
+      "posted": "24 days ago"
+    },
+    {
+      "id": "b429b35ce081",
+      "title": "Forward Deployed Engineer",
+      "company": "Northwood Space",
+      "location": "Washington D.C., Washington D.C., USA, Washington D.C.",
+      "url": "https://jobs.ashbyhq.com/NorthwoodSpace/d0589c2d-0fb5-4463-b479-260ff3e1447f",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:andreessen-horowitz",
+      "tier": "discover",
+      "minExp": null,
+      "age": 38,
+      "posted": "38 days ago"
+    },
+    {
+      "id": "57cc294c578f",
+      "title": "Forward Deployed Engineer - Western US",
+      "company": "Redpanda Data",
+      "location": "San Francisco, California, USA, San Francisco, California - Hybrid",
+      "url": "https://jobs.ashbyhq.com/redpanda-data/578668b4-4e0d-4896-9b5b-924bf1b9a035",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:lightspeed",
+      "tier": "discover",
+      "minExp": null,
+      "age": 38,
+      "posted": "38 days ago"
+    },
+    {
+      "id": "71f1b299f33e",
+      "title": "Forward Deployed Engineer, Public Sector",
+      "company": "Domino Data Lab",
+      "location": "Remote US (Maryland)",
+      "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8160818",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:sequoia-capital",
+      "tier": "discover",
+      "minExp": null,
+      "age": null,
+      "posted": ""
+    },
+    {
+      "id": "846a22858626",
+      "title": "Forward Deployed Engineer, Life Sciences",
+      "company": "Domino Data Lab",
+      "location": "Remote US",
+      "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8039139",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:sequoia-capital",
+      "tier": "discover",
+      "minExp": null,
+      "age": null,
+      "posted": ""
+    },
+    {
+      "id": "b15b36500ce4",
+      "title": "Forward Deployed Engineer",
+      "company": "Lumafield",
+      "location": "Boston, MA",
+      "url": "https://jobs.lever.co/lumafield/489ed061-1187-4b6b-bd13-786ed72abb6f",
+      "kind": "full-time",
+      "role": "fde",
+      "track": "product",
+      "source": "vc:kleiner-perkins",
+      "tier": "discover",
+      "minExp": 3,
+      "age": null,
+      "posted": ""
+    },
+    {
       "id": "e3484f3590a8",
       "title": "Associate Product Manager, New Grad (2027 Start)",
       "company": "Databricks",
@@ -553,8 +808,8 @@
       "source": "github",
       "tier": "tier1",
       "minExp": null,
-      "age": 43,
-      "posted": "43 days ago"
+      "age": 44,
+      "posted": "44 days ago"
     },
     {
       "id": "4107b2375e71",
@@ -570,6 +825,81 @@
       "minExp": null,
       "age": null,
       "posted": ""
+    },
+    {
+      "id": "2f260bd62460",
+      "title": "Associate Product Manager",
+      "company": "Saronic Technologies",
+      "location": "Austin, TX, USA, Travis County, TX, USA",
+      "url": "https://jobs.ashbyhq.com/saronic/faedc1a5-99c2-41c8-a7ce-8329084b0224",
+      "kind": "full-time",
+      "role": "apm",
+      "track": "product",
+      "source": "vc:general-catalyst",
+      "tier": "discover",
+      "minExp": null,
+      "age": 8,
+      "posted": "8 days ago"
+    },
+    {
+      "id": "1d321ea5f6e4",
+      "title": "Associate Product Manager, New Grad",
+      "company": "Wyzant",
+      "location": "San Mateo, CA, USA, San Mateo County, CA, USA",
+      "url": "https://boards.greenhouse.io/ixllearning/jobs/8663710002",
+      "kind": "full-time",
+      "role": "apm",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 22,
+      "posted": "22 days ago"
+    },
+    {
+      "id": "d2e9e08beb8d",
+      "title": "Associate Product Manager",
+      "company": "Judi Health",
+      "location": "United States, North America",
+      "url": "https://boards.greenhouse.io/judihealth/jobs/5379836008",
+      "kind": "full-time",
+      "role": "apm",
+      "track": "product",
+      "source": "vc:general-catalyst",
+      "tier": "discover",
+      "minExp": null,
+      "age": 23,
+      "posted": "23 days ago"
+    },
+    {
+      "id": "4edea5eaf1f1",
+      "title": "Associate Product Manager, Hive Models",
+      "company": "Hive",
+      "location": "San Francisco, CA, USA, San Francisco County, CA, USA",
+      "url": "https://jobs.lever.co/hive/c9da614c-7ebe-493f-a770-b79b711fd7df",
+      "kind": "full-time",
+      "role": "apm",
+      "track": "product",
+      "source": "vc:general-catalyst",
+      "tier": "discover",
+      "minExp": null,
+      "age": 36,
+      "posted": "36 days ago"
+    },
+    {
+      "id": "8b38e8e3513c",
+      "title": "Associate Product Manager, New Grad (2027 Start)",
+      "company": "Neon",
+      "location": "California, USA, United States",
+      "url": "https://www.databricks.com/company/careers/university-recruiting/associate-product-manager-new-grad-2027-start-7586263002",
+      "kind": "full-time",
+      "role": "apm",
+      "track": "product",
+      "source": "vc:general-catalyst",
+      "tier": "discover",
+      "minExp": null,
+      "age": 43,
+      "posted": "43 days ago"
     },
     {
       "id": "102b858e5fce",
@@ -647,21 +977,6 @@
       "posted": ""
     },
     {
-      "id": "d16680a701fa",
-      "title": "Product Management Intern (Fall 2026)",
-      "company": "Skydio",
-      "location": "San Mateo, CA",
-      "url": "https://jobs.ashbyhq.com/skydio/1ec2fe3c-3fb2-4485-870d-764a3e5f5baf/application?embed=true",
-      "kind": "intern",
-      "role": "product-intern",
-      "track": "product",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 28,
-      "posted": "28 days ago"
-    },
-    {
       "id": "4774516ba745",
       "title": "Hardware Product Management Intern",
       "company": "Skydio",
@@ -675,6 +990,111 @@
       "minExp": null,
       "age": 29,
       "posted": "29 days ago"
+    },
+    {
+      "id": "d16680a701fa",
+      "title": "Product Management Intern (Fall 2026)",
+      "company": "Skydio",
+      "location": "San Mateo, CA",
+      "url": "https://jobs.ashbyhq.com/skydio/1ec2fe3c-3fb2-4485-870d-764a3e5f5baf/application?embed=true",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "github",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 29,
+      "posted": "29 days ago"
+    },
+    {
+      "id": "096bf8de418e",
+      "title": "Storage Product Management Intern 2027 -Tucson, AZ",
+      "company": "Instana",
+      "location": "Tucson, AZ, USA, Pima County, AZ, USA",
+      "url": "https://careers.ibm.com/careers/JobDetail?jobId=130390",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 0,
+      "posted": "today"
+    },
+    {
+      "id": "a61c575dc4d6",
+      "title": "Product Management Intern (Master's/MBA)",
+      "company": "Nimble Storage",
+      "location": "Spring, TX, USA, Harris County, TX, USA",
+      "url": "https://careers.hpe.com/us/en/job/1213634",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 0,
+      "posted": "today"
+    },
+    {
+      "id": "bc0f36088281",
+      "title": "Product Manager Intern - RTP 2027",
+      "company": "Instana",
+      "location": "Richland, WA, USA, Benton County, WA, USA",
+      "url": "https://careers.ibm.com/careers/JobDetail?jobId=129913",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 3,
+      "posted": "3 days ago"
+    },
+    {
+      "id": "dcc7232891ec",
+      "title": "Product Management Intern 2027",
+      "company": "Instana",
+      "location": "Poughkeepsie, NY, USA, Dutchess County, NY, USA",
+      "url": "https://careers.ibm.com/careers/JobDetail?jobId=129752",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 3,
+      "posted": "3 days ago"
+    },
+    {
+      "id": "6745afd7b1fb",
+      "title": "Forward Deployed Engineering Internship (Fall 2026 & Winter 2027)",
+      "company": "Composio",
+      "location": "San Francisco, California, USA, sf",
+      "url": "https://jobs.ashbyhq.com/composio/6b742321-a1e6-46d7-88d1-103bae44df23",
+      "kind": "intern",
+      "role": "fde-intern",
+      "track": "product",
+      "source": "vc:lightspeed",
+      "tier": "discover",
+      "minExp": null,
+      "age": 16,
+      "posted": "16 days ago"
+    },
+    {
+      "id": "80e5ba5f0cf9",
+      "title": "Product Manager Intern 2027",
+      "company": "Instana",
+      "location": "United States, North America",
+      "url": "https://careers.ibm.com/careers/JobDetail?jobId=128509",
+      "kind": "intern",
+      "role": "product-intern",
+      "track": "product",
+      "source": "vc:accel",
+      "tier": "discover",
+      "minExp": null,
+      "age": 16,
+      "posted": "16 days ago"
     },
     {
       "id": "8ae0aae740a4",
@@ -733,8 +1153,8 @@
       "source": "github",
       "tier": "tier1",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "c477a9921b2d",
@@ -748,23 +1168,8 @@
       "source": "github",
       "tier": "big-tech",
       "minExp": null,
-      "age": 7,
-      "posted": "7 days ago"
-    },
-    {
-      "id": "01529130d508",
-      "title": "Software Engineer Intern - Information Security - Spring 2027 (Winter 2027)",
-      "company": "Tesla",
-      "location": "Bellevue, WA",
-      "url": "https://www.tesla.com/careers/search/job/281473",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 8,
+      "posted": "8 days ago"
     },
     {
       "id": "8072417f30cf",
@@ -780,6 +1185,21 @@
       "minExp": null,
       "age": 1,
       "posted": "1 day ago"
+    },
+    {
+      "id": "01529130d508",
+      "title": "Software Engineer Intern - Information Security - Spring 2027 (Winter 2027)",
+      "company": "Tesla",
+      "location": "Bellevue, WA",
+      "url": "https://www.tesla.com/careers/search/job/281473",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "github",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "f65f990170fe",
@@ -858,21 +1278,6 @@
     },
     {
       "id": "723c45656160",
-      "title": "Embedded Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7974897003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
-      "id": "723c45656160",
       "title": "Embedded Software Engineer Intern (Spring 2027)",
       "company": "Zipline",
       "location": "South San Francisco, California, USA",
@@ -881,6 +1286,21 @@
       "role": "swe-intern",
       "track": "software",
       "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 4,
+      "posted": "4 days ago"
+    },
+    {
+      "id": "723c45656160",
+      "title": "Embedded Software Engineer Intern - Spring 2027 (Spring 2027)",
+      "company": "Zipline",
+      "location": "South SF",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7974897003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "github",
       "tier": "robotics",
       "minExp": null,
       "age": 4,
@@ -896,21 +1316,6 @@
       "role": "swe-intern",
       "track": "software",
       "source": "company",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
-    },
-    {
-      "id": "75c390f24e67",
-      "title": "Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7907191003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
       "tier": "robotics",
       "minExp": null,
       "age": 8,
@@ -962,6 +1367,21 @@
       "posted": "9 days ago"
     },
     {
+      "id": "75c390f24e67",
+      "title": "Software Engineer Intern - Spring 2027 (Spring 2027)",
+      "company": "Zipline",
+      "location": "South SF",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7907191003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "github",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 9,
+      "posted": "9 days ago"
+    },
+    {
       "id": "574e69c9bdb7",
       "title": "Enterprise Systems Software Engineer Intern (Spring 2027)",
       "company": "Zipline",
@@ -1007,21 +1427,6 @@
       "posted": "10 days ago"
     },
     {
-      "id": "574e69c9bdb7",
-      "title": "Enterprise Systems Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7893926003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
-    },
-    {
       "id": "ec5e8380228d",
       "title": "Long Range Platform Hardware Engineering Intern (Summer 2027)",
       "company": "Zipline",
@@ -1052,6 +1457,21 @@
       "posted": "11 days ago"
     },
     {
+      "id": "574e69c9bdb7",
+      "title": "Enterprise Systems Software Engineer Intern - Spring 2027 (Spring 2027)",
+      "company": "Zipline",
+      "location": "South SF",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7893926003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "github",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 11,
+      "posted": "11 days ago"
+    },
+    {
       "id": "9755e261416b",
       "title": "Software Engineer Intern - AI Inference Co Design (Fall 2026)",
       "company": "Tesla",
@@ -1063,8 +1483,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 17,
-      "posted": "17 days ago"
+      "age": 18,
+      "posted": "18 days ago"
     },
     {
       "id": "3630b5fad457",
@@ -1078,8 +1498,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 18,
-      "posted": "18 days ago"
+      "age": 19,
+      "posted": "19 days ago"
     },
     {
       "id": "08a5d4fa9518",
@@ -1108,8 +1528,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 30,
-      "posted": "30 days ago"
+      "age": 31,
+      "posted": "31 days ago"
     },
     {
       "id": "5a82e5883d2a",
@@ -1123,8 +1543,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 31,
-      "posted": "31 days ago"
+      "age": 32,
+      "posted": "32 days ago"
     },
     {
       "id": "397f4ec6ab7b",
@@ -1138,8 +1558,8 @@
       "source": "github",
       "tier": "robotics",
       "minExp": null,
-      "age": 43,
-      "posted": "43 days ago"
+      "age": 44,
+      "posted": "44 days ago"
     },
     {
       "id": "b03070481dce",
@@ -1153,8 +1573,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "c690f1788381",
@@ -1170,6 +1590,30 @@
       "minExp": null,
       "age": 45,
       "posted": "45 days ago"
+    }
+  ],
+  "signals": [
+    {
+      "id": "04ac051f145c",
+      "title": "Faking a brand is easy. Making it stop is hard.",
+      "company": "a16z",
+      "url": "https://www.a16z.news/p/faking-a-brand-is-easy",
+      "snippet": "...ad, another on a lookalike domain, all at once, and operating 24/7 with the help of AI.    The usual human math doesn\u2019t apply here. Spinning up a new head costs the attacker minutes; finding and cutting one off costs a defender hours, and increasingly the heads appear everywhere at the same time: near-simultaneous multi-surface ",
+      "links": [],
+      "source": "feed:a16z",
+      "posted": "3 days ago",
+      "posted_ts": 1787752844
+    },
+    {
+      "id": "f8107778a9f2",
+      "title": "Cursor + SpaceXAI: the fastest iterating team wins",
+      "company": "a16z",
+      "url": "https://www.a16z.news/p/cursor-spacexai-fastest-iterating-team",
+      "snippet": "... old Hacker News posts, or screenshots of messages they\u2019d received from Truell in 2022 or 2023 asking if they wanted to join the team, or stories about how hard the Cursor team worked. But that\u2019s a bad misreading of both Elon and Cursor. If that\u2019s what they wanted, then Elon wouldn\u2019t be Elon, and Cursor would soon be fading from me",
+      "links": [],
+      "source": "feed:a16z",
+      "posted": "15 days ago",
+      "posted_ts": 1786716424
     }
   ]
 }
