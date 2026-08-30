@@ -15,6 +15,7 @@ COMPANIES_RAW = ROOT / "data" / "companies_raw.json"
 VC_RAW = ROOT / "data" / "vc_raw.json"
 FEEDS_RAW = ROOT / "data" / "feeds_raw.json"
 X_RAW = ROOT / "data" / "x_raw.json"
+SOURCES = ROOT / "sources.json"
 OUT = ROOT / "site" / "jobs.json"
 
 
@@ -99,10 +100,18 @@ def load(path):
     return json.loads(path.read_text()) if path.exists() else []
 
 
+def on(source):
+    """Whether a supplemental source is switched on in sources.json."""
+    if not SOURCES.exists():
+        return False
+    return bool(json.loads(SOURCES.read_text()).get("enabled", {}).get(source))
+
+
 def signals():
     """Newsletter/blog/X hiring mentions — context, not postings."""
     out = []
-    for s in load(FEEDS_RAW) + load(X_RAW):
+    raw = (load(FEEDS_RAW) if on("feeds") else []) + (load(X_RAW) if on("x") else [])
+    for s in raw:
         out.append(
             {
                 "id": hashlib.sha1(s["url"].encode()).hexdigest()[:12],
@@ -121,9 +130,9 @@ def signals():
 
 
 def main():
-    raw = load(COMPANIES_RAW) + load(GITHUB_RAW)
+    raw = load(COMPANIES_RAW) + (load(GITHUB_RAW) if on("github_lists") else [])
     # VC portfolio boards are discovery: companies off the watchlist are allowed.
-    discovery = load(VC_RAW)
+    discovery = load(VC_RAW) if on("vc_boards") else []
     for j in discovery:
         j["discover"] = True
     jobs = []

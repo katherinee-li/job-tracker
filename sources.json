@@ -1,5 +1,13 @@
 {
-  "_comment": "Edit this file to change what gets scanned each morning. No code changes needed.",
+  "_comment": "Edit this file to change what gets scanned. No code changes needed.",
+
+  "_enabled_comment": "Master switches. Only the watchlist companies' own career boards run by default; flip one to true to bring that source back.",
+  "enabled": {
+    "github_lists": false,
+    "vc_boards": false,
+    "feeds": false,
+    "x": false
+  },
 
   "consider_boards": [
     {"board": "andreessen-horowitz", "host": "portfoliojobs.a16z.com"},

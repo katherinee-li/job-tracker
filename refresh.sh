@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
-# Daily refresh: re-scan the watchlist boards, rebuild the site payload.
+# Refresh: re-scan the watchlist companies' career boards, rebuild the site payload.
+# Supplemental sources (GitHub lists, VC portfolio boards, RSS, X) are opt-in —
+# flip them on under "enabled" in sources.json.
 set -euo pipefail
 cd "$(dirname "$0")"
+
+enabled() { python -c "import json,sys;print(json.load(open('sources.json'))['enabled'].get(sys.argv[1]) and 1 or '')" "$1"; }
+
 python scrape_companies.py
-python scrape_github.py
-python scrape_vc.py
-python scrape_feeds.py
-# X is off by default: syndication rate-limits to ~30 requests per window, so a
-# full pass over sources.json's x_accounts can stall the run. Enable with X=1.
-[ "${X:-0}" = "1" ] && python scrape_x.py || true
+if [ -n "$(enabled github_lists)" ]; then python scrape_github.py; fi
+if [ -n "$(enabled vc_boards)" ]; then python scrape_vc.py; fi
+if [ -n "$(enabled feeds)" ]; then python scrape_feeds.py; fi
+if [ -n "$(enabled x)" ]; then python scrape_x.py; fi
 python build_site.py
 cp site/index.html site/jobs.json kathyjobs/
 python daily.py

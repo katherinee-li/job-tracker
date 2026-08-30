@@ -46,13 +46,13 @@
 <body>
 <header>
   <h1>Job Tracker</h1>
-  <div class="sub">Forward-deployed engineering, APM / early-career PM and product internships (US, &le;3 yrs experience), plus a Software tab for SWE internships and co-ops. Checked daily on the watchlist companies' career boards and on VC portfolio boards (a16z, Sequoia, Lightspeed, Kleiner, General Catalyst, Accel) — off-watchlist finds are tagged <b>discover</b>. Updated <span id="updated">—</span>. "Add to sheet" copies a row in your Recruitment sheet's format.</div>
+  <div class="sub">Forward-deployed engineering, APM / early-career PM and product internships (US, &le;3 yrs experience), plus a Software tab for SWE internships and co-ops. Checked daily on the watchlist companies' career boards — supplemental sources (GitHub lists, VC portfolio boards, newsletters, X) are switched off in <code>sources.json</code>. Updated <span id="updated">—</span>. "Add to sheet" copies a row in your Recruitment sheet's format.</div>
 </header>
 
 <div class="tabs">
   <button data-track="product" class="on">Product / FDE</button>
   <button data-track="software">Software</button>
-  <button data-track="signals">Signals <span id="sigN"></span></button>
+  <button data-track="signals" id="sigTab" style="display:none">Signals <span id="sigN"></span></button>
 </div>
 
 <div class="bar">
@@ -276,6 +276,8 @@ fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
   jobs = d.jobs; signals = d.signals || [];
   document.getElementById("updated").textContent = d.updated;
   document.getElementById("sigN").textContent = signals.length ? "(" + signals.length + ")" : "";
+  if (signals.length) document.getElementById("sigTab").style.display = "";
+  if (!jobs.some(j => j.tier === "discover")) document.querySelector("#tier option[value=discover]").remove();
   renderCompanies(); render();
 });
 </script>
