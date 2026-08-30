@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 19:30 UTC",
+  "updated": "2026-08-30 18:07 UTC",
   "jobs": [
     {
       "id": "007a985fe34c",
@@ -28,8 +28,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "cf87ee09f5de",
@@ -43,8 +43,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
+      "age": 4,
+      "posted": "4 days ago"
     },
     {
       "id": "1dae2ed35def",
@@ -58,8 +58,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
+      "age": 4,
+      "posted": "4 days ago"
     },
     {
       "id": "5de42be91950",
@@ -73,8 +73,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": 3,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "358cd102c0ea",
@@ -88,8 +88,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "9724973c476a",
@@ -103,8 +103,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "569cb3ab092f",
@@ -118,8 +118,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "be0c64cd41e8",
@@ -133,8 +133,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "aab09b8c4ae1",
@@ -148,8 +148,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "f761d09625d4",
@@ -163,8 +163,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "6f08f4d77480",
@@ -178,8 +178,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "62aa156b5ff1",
@@ -193,8 +193,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "971505042781",
@@ -208,8 +208,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": 2,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "762ddb31b045",
@@ -223,8 +223,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 25,
-      "posted": "25 days ago"
+      "age": 26,
+      "posted": "26 days ago"
     },
     {
       "id": "2c46bb0f8187",
@@ -238,8 +238,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 35,
-      "posted": "35 days ago"
+      "age": 36,
+      "posted": "36 days ago"
     },
     {
       "id": "8cfdfa9fd5ee",
@@ -298,8 +298,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "7dd3a440b940",
@@ -328,8 +328,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "4690762aaf53",
@@ -343,8 +343,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "d3f26382f768",
@@ -358,8 +358,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 2,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "d7bfe627c130",
@@ -373,8 +373,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "868e90af7e4c",
@@ -388,8 +388,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "45e1d04f98c0",
@@ -403,8 +403,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 7,
-      "posted": "7 days ago"
+      "age": 8,
+      "posted": "8 days ago"
     },
     {
       "id": "27e2f411bd70",
@@ -418,8 +418,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "c03ef4d03593",
@@ -433,8 +433,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "c08b53a39721",
@@ -448,8 +448,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": 1,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "939cf96b5122",
@@ -463,8 +463,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 16,
-      "posted": "16 days ago"
+      "age": 17,
+      "posted": "17 days ago"
     },
     {
       "id": "79d9727d6fbd",
@@ -478,8 +478,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 23,
-      "posted": "23 days ago"
+      "age": 24,
+      "posted": "24 days ago"
     },
     {
       "id": "47561b1bdc81",
@@ -493,8 +493,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "f5b4a2000876",
@@ -508,8 +508,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "65088750bed9",
@@ -523,8 +523,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "e3484f3590a8",
@@ -538,23 +538,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
-    },
-    {
-      "id": "70fb986758f2",
-      "title": "Associate Product Manager New Grad",
-      "company": "Databricks",
-      "location": "SF, Bellevue, WA, Mountain View, CA",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=7586263002",
-      "kind": "full-time",
-      "role": "apm",
-      "track": "product",
-      "source": "github",
-      "tier": "tier1",
-      "minExp": null,
-      "age": 43,
-      "posted": "43 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "4107b2375e71",
@@ -583,8 +568,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "9d67545b91f9",
@@ -598,38 +583,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
-    },
-    {
-      "id": "102b858e5fce",
-      "title": "Product Management Intern (Winter 2027)",
-      "company": "Datadog",
-      "location": "NYC",
-      "url": "https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241",
-      "kind": "intern",
-      "role": "product-intern",
-      "track": "product",
-      "source": "github",
-      "tier": "tier1",
-      "minExp": null,
       "age": 12,
       "posted": "12 days ago"
-    },
-    {
-      "id": "bcd53a8c5e7f",
-      "title": "Product Manager Intern",
-      "company": "Microsoft",
-      "location": "Remote",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556953113",
-      "kind": "intern",
-      "role": "product-intern",
-      "track": "product",
-      "source": "github",
-      "tier": "big-tech",
-      "minExp": null,
-      "age": 25,
-      "posted": "25 days ago"
     },
     {
       "id": "592dde3cae4b",
@@ -645,21 +600,6 @@
       "minExp": null,
       "age": null,
       "posted": ""
-    },
-    {
-      "id": "d16680a701fa",
-      "title": "Product Management Intern (Fall 2026)",
-      "company": "Skydio",
-      "location": "San Mateo, CA",
-      "url": "https://jobs.ashbyhq.com/skydio/1ec2fe3c-3fb2-4485-870d-764a3e5f5baf/application?embed=true",
-      "kind": "intern",
-      "role": "product-intern",
-      "track": "product",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 28,
-      "posted": "28 days ago"
     },
     {
       "id": "4774516ba745",
@@ -688,8 +628,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "f05175a1c85f",
@@ -703,8 +643,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "63f3352f93a7",
@@ -718,53 +658,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
-    },
-    {
-      "id": "682605041f0e",
-      "title": "Systems Software Engineering Intern (Fall 2026)",
-      "company": "NVIDIA",
-      "location": "Santa Clara, CA",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "tier1",
-      "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
-    },
-    {
-      "id": "c477a9921b2d",
-      "title": "AI Software Engineer Intern - Edge (Fall 2026)",
-      "company": "Microsoft",
-      "location": "Redmond, WA, Mountain View, CA",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556979054",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "big-tech",
-      "minExp": null,
-      "age": 7,
-      "posted": "7 days ago"
-    },
-    {
-      "id": "01529130d508",
-      "title": "Software Engineer Intern - Information Security - Spring 2027 (Winter 2027)",
-      "company": "Tesla",
-      "location": "Bellevue, WA",
-      "url": "https://www.tesla.com/careers/search/job/281473",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 9,
+      "posted": "9 days ago"
     },
     {
       "id": "8072417f30cf",
@@ -778,8 +673,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "f65f990170fe",
@@ -797,81 +692,6 @@
       "posted": "3 days ago"
     },
     {
-      "id": "aa37b96da0a7",
-      "title": "Embedded Software Engineer Intern - Firmware Platforms (Spring 2027)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/281102",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
-      "id": "eb967b17477d",
-      "title": "Fullstack Software Engineer Intern - Fleetnet - Fullstack Software Engineering (Spring 2027)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/281099",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
-      "id": "3c400f6df68a",
-      "title": "Software Engineer Intern - Maps & Navigation Validation (Spring 2027)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/281271",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
-      "id": "a09a78aeaeaf",
-      "title": "Software Engineer Intern - Maps & Navigation - Robotaxi (Spring 2027)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/280960",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
-      "id": "723c45656160",
-      "title": "Embedded Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7974897003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
-    },
-    {
       "id": "723c45656160",
       "title": "Embedded Software Engineer Intern (Spring 2027)",
       "company": "Zipline",
@@ -883,53 +703,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 4,
-      "posted": "4 days ago"
-    },
-    {
-      "id": "269af2118ac9",
-      "title": "Software Engineer Intern (Summer 2027)",
-      "company": "Zipline",
-      "location": "South San Francisco, California, USA",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7929236003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "company",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
-    },
-    {
-      "id": "75c390f24e67",
-      "title": "Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7907191003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
-    },
-    {
-      "id": "574f4a8c7c55",
-      "title": "Maintenance Tool Engineering Intern (Spring 2027)",
-      "company": "Zipline",
-      "location": "Esparto, California, USA",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7909945003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "company",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 9,
-      "posted": "9 days ago"
+      "age": 5,
+      "posted": "5 days ago"
     },
     {
       "id": "57dc21dd892b",
@@ -947,6 +722,36 @@
       "posted": "9 days ago"
     },
     {
+      "id": "269af2118ac9",
+      "title": "Software Engineer Intern (Summer 2027)",
+      "company": "Zipline",
+      "location": "South San Francisco, California, USA",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7929236003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 9,
+      "posted": "9 days ago"
+    },
+    {
+      "id": "574f4a8c7c55",
+      "title": "Maintenance Tool Engineering Intern (Spring 2027)",
+      "company": "Zipline",
+      "location": "Esparto, California, USA",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7909945003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 10,
+      "posted": "10 days ago"
+    },
+    {
       "id": "75c390f24e67",
       "title": "Software Engineer Intern (Spring 2027)",
       "company": "Zipline",
@@ -958,8 +763,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 9,
-      "posted": "9 days ago"
+      "age": 10,
+      "posted": "10 days ago"
     },
     {
       "id": "574e69c9bdb7",
@@ -973,8 +778,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "f01dc77a08ef",
@@ -988,8 +793,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "e68e77c8f79e",
@@ -1003,23 +808,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
-    },
-    {
-      "id": "574e69c9bdb7",
-      "title": "Enterprise Systems Software Engineer Intern - Spring 2027 (Spring 2027)",
-      "company": "Zipline",
-      "location": "South SF",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7893926003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "ec5e8380228d",
@@ -1033,8 +823,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "4c5a438a4936",
@@ -1048,98 +838,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
-    },
-    {
-      "id": "9755e261416b",
-      "title": "Software Engineer Intern - AI Inference Co Design (Fall 2026)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/279600",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 17,
-      "posted": "17 days ago"
-    },
-    {
-      "id": "3630b5fad457",
-      "title": "Software Engineer Intern - Engineering Automation - Vehicle Engineering (Winter 2027)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/279763",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 18,
-      "posted": "18 days ago"
-    },
-    {
-      "id": "08a5d4fa9518",
-      "title": "Vehicle Software Intern - Vehicle Software Engineer-Diagnostic User Interface (Fall 2026)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/278703",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 29,
-      "posted": "29 days ago"
-    },
-    {
-      "id": "d01c939edf1f",
-      "title": "Software Engineer Intern - Software Engineer - AI Infrastructure (Fall 2026)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/278578",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 30,
-      "posted": "30 days ago"
-    },
-    {
-      "id": "5a82e5883d2a",
-      "title": "Charging Data Modeling Intern - Charging Data Modeling - Machine Learning Engineer (Fall 2026)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/278249",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 31,
-      "posted": "31 days ago"
-    },
-    {
-      "id": "397f4ec6ab7b",
-      "title": "Energy Battery Firmware Intern - Software Engineer - Energy Engineering (Fall 2026)",
-      "company": "Tesla",
-      "location": "Palo Alto, CA",
-      "url": "https://www.tesla.com/careers/search/job/276987",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 43,
-      "posted": "43 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "b03070481dce",
@@ -1153,23 +853,9 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
-    },
-    {
-      "id": "c690f1788381",
-      "title": "Software Engineer Intern (Fall 2026)",
-      "company": "Cloudflare",
-      "location": "Austin, TX",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "github",
-      "tier": "ai-infra",
-      "minExp": null,
-      "age": 45,
-      "posted": "45 days ago"
+      "age": 2,
+      "posted": "2 days ago"
     }
-  ]
+  ],
+  "signals": []
 }

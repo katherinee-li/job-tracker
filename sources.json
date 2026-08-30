@@ -1,0 +1,57 @@
+{
+  "_comment": "Edit this file to change what gets scanned. No code changes needed.",
+
+  "_enabled_comment": "Master switches. Only the watchlist companies' own career boards run by default; flip one to true to bring that source back.",
+  "enabled": {
+    "github_lists": false,
+    "vc_boards": false,
+    "feeds": false,
+    "x": false
+  },
+
+  "consider_boards": [
+    {"board": "andreessen-horowitz", "host": "portfoliojobs.a16z.com"},
+    {"board": "sequoia-capital", "host": "jobs.sequoiacap.com"},
+    {"board": "lightspeed", "host": "jobs.lsvp.com"},
+    {"board": "kleiner-perkins", "host": "jobs.kleinerperkins.com"}
+  ],
+
+  "getro_networks": [
+    {"collection": "222", "name": "general-catalyst"},
+    {"collection": "8672", "name": "accel"}
+  ],
+
+  "feeds": [
+    {"name": "a16z", "url": "https://www.a16z.news/feed"}
+  ],
+
+  "_x_comment": "X handles (no @). Their public posts are checked for hiring announcements; add or remove freely.",
+  "x_accounts": [
+    "OpenAI",
+    "AnthropicAI",
+    "cognition_labs",
+    "FireworksAI_HQ",
+    "scale_AI",
+    "PalantirTech",
+    "physical_int",
+    "SkildAI",
+    "Figure_robot",
+    "anduriltech",
+    "exa_ai",
+    "perplexity_ai",
+    "sierraplatform",
+    "glean",
+    "harvey__ai",
+    "cursor_ai",
+    "replit",
+    "elevenlabsio",
+    "modal_labs",
+    "basetenco",
+    "GroqInc",
+    "LangChainAI",
+    "getdecagon",
+    "mercor_ai",
+    "applied_int",
+    "skydio"
+  ]
+}
