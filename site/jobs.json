@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30 06:28 UTC",
+  "updated": "2026-08-30 18:07 UTC",
   "jobs": [
     {
       "id": "007a985fe34c",
@@ -28,8 +28,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "cf87ee09f5de",
@@ -43,8 +43,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
+      "age": 4,
+      "posted": "4 days ago"
     },
     {
       "id": "1dae2ed35def",
@@ -58,8 +58,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 3,
-      "posted": "3 days ago"
+      "age": 4,
+      "posted": "4 days ago"
     },
     {
       "id": "5de42be91950",
@@ -73,8 +73,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": 3,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "358cd102c0ea",
@@ -88,8 +88,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "9724973c476a",
@@ -103,8 +103,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "569cb3ab092f",
@@ -118,8 +118,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "be0c64cd41e8",
@@ -133,8 +133,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "aab09b8c4ae1",
@@ -298,8 +298,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "7dd3a440b940",
@@ -388,8 +388,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "45e1d04f98c0",
@@ -403,8 +403,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 7,
-      "posted": "7 days ago"
+      "age": 8,
+      "posted": "8 days ago"
     },
     {
       "id": "27e2f411bd70",
@@ -463,8 +463,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 16,
-      "posted": "16 days ago"
+      "age": 17,
+      "posted": "17 days ago"
     },
     {
       "id": "79d9727d6fbd",
@@ -493,8 +493,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "f5b4a2000876",
@@ -508,8 +508,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "65088750bed9",
@@ -523,8 +523,8 @@
       "source": "company",
       "tier": "ai-infra",
       "minExp": null,
-      "age": 26,
-      "posted": "26 days ago"
+      "age": 27,
+      "posted": "27 days ago"
     },
     {
       "id": "e3484f3590a8",
@@ -538,8 +538,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "4107b2375e71",
@@ -568,8 +568,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "9d67545b91f9",
@@ -583,8 +583,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "592dde3cae4b",
@@ -628,8 +628,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 2,
-      "posted": "2 days ago"
+      "age": 3,
+      "posted": "3 days ago"
     },
     {
       "id": "f05175a1c85f",
@@ -643,8 +643,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 5,
-      "posted": "5 days ago"
+      "age": 6,
+      "posted": "6 days ago"
     },
     {
       "id": "63f3352f93a7",
@@ -658,8 +658,8 @@
       "source": "company",
       "tier": "tier1",
       "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
+      "age": 9,
+      "posted": "9 days ago"
     },
     {
       "id": "8072417f30cf",
@@ -673,8 +673,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 1,
-      "posted": "1 day ago"
+      "age": 2,
+      "posted": "2 days ago"
     },
     {
       "id": "f65f990170fe",
@@ -703,38 +703,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 4,
-      "posted": "4 days ago"
-    },
-    {
-      "id": "269af2118ac9",
-      "title": "Software Engineer Intern (Summer 2027)",
-      "company": "Zipline",
-      "location": "South San Francisco, California, USA",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7929236003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "company",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 8,
-      "posted": "8 days ago"
-    },
-    {
-      "id": "574f4a8c7c55",
-      "title": "Maintenance Tool Engineering Intern (Spring 2027)",
-      "company": "Zipline",
-      "location": "Esparto, California, USA",
-      "url": "https://www.zipline.com/open-roles?gh_jid=7909945003",
-      "kind": "intern",
-      "role": "swe-intern",
-      "track": "software",
-      "source": "company",
-      "tier": "robotics",
-      "minExp": null,
-      "age": 9,
-      "posted": "9 days ago"
+      "age": 5,
+      "posted": "5 days ago"
     },
     {
       "id": "57dc21dd892b",
@@ -752,6 +722,36 @@
       "posted": "9 days ago"
     },
     {
+      "id": "269af2118ac9",
+      "title": "Software Engineer Intern (Summer 2027)",
+      "company": "Zipline",
+      "location": "South San Francisco, California, USA",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7929236003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 9,
+      "posted": "9 days ago"
+    },
+    {
+      "id": "574f4a8c7c55",
+      "title": "Maintenance Tool Engineering Intern (Spring 2027)",
+      "company": "Zipline",
+      "location": "Esparto, California, USA",
+      "url": "https://www.zipline.com/open-roles?gh_jid=7909945003",
+      "kind": "intern",
+      "role": "swe-intern",
+      "track": "software",
+      "source": "company",
+      "tier": "robotics",
+      "minExp": null,
+      "age": 10,
+      "posted": "10 days ago"
+    },
+    {
       "id": "75c390f24e67",
       "title": "Software Engineer Intern (Spring 2027)",
       "company": "Zipline",
@@ -763,8 +763,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 9,
-      "posted": "9 days ago"
+      "age": 10,
+      "posted": "10 days ago"
     },
     {
       "id": "574e69c9bdb7",
@@ -778,8 +778,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "f01dc77a08ef",
@@ -793,8 +793,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "e68e77c8f79e",
@@ -808,8 +808,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 10,
-      "posted": "10 days ago"
+      "age": 11,
+      "posted": "11 days ago"
     },
     {
       "id": "ec5e8380228d",
@@ -823,8 +823,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "4c5a438a4936",
@@ -838,8 +838,8 @@
       "source": "company",
       "tier": "robotics",
       "minExp": null,
-      "age": 11,
-      "posted": "11 days ago"
+      "age": 12,
+      "posted": "12 days ago"
     },
     {
       "id": "b03070481dce",
